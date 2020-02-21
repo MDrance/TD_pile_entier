@@ -6,7 +6,6 @@ class Pile
 {
     static int size;
     int *m_pile = nullptr;
-    int max_size;
     
     
     
@@ -19,6 +18,7 @@ class Pile
         int depile();
         int pleine();
         int vide();
+        int max_size;
 };
 
 #endif
