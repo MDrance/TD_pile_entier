@@ -5,8 +5,6 @@
 static int size;
 int max_size;
 
-//pipou
-
 Pile::Pile(int n)
 {
     m_pile = (int *)malloc(sizeof(int) * n);
