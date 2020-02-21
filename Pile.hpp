@@ -7,6 +7,8 @@ class Pile
     static int size;
     int *m_pile = nullptr;
     
+    
+    
     public:
         Pile(int);
         Pile();
@@ -16,6 +18,7 @@ class Pile
         int depile();
         int pleine();
         int vide();
+        int max_size;
 };
 
 #endif
