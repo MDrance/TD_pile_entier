@@ -45,7 +45,7 @@ int Pile::depile()
 
 int Pile::pleine()
 {
-    if (size == this->get_max_size())
+    if (size == max_size)
     {
         return 1;
     }
