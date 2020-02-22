@@ -21,7 +21,7 @@ Pile::Pile(Pile &pile_const)
 {
     m_pile = (int *)malloc(sizeof(pile_const.m_pile));
     m_pile = pile_const.m_pile;
-    this->max_size = pile_const.max_size;
+    max_size = pile_const.get_max_size();
 }
 
 Pile::~Pile()
@@ -45,7 +45,7 @@ int Pile::depile()
 
 int Pile::pleine()
 {
-    if (size == max_size)
+    if (size == this->get_max_size())
     {
         return 1;
     }
@@ -59,5 +59,10 @@ int Pile::vide()
         return 1;
     }
     return 0;
+}
+
+int Pile::get_max_size()
+{
+    return this->max_size;
 }
 
