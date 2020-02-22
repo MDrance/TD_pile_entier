@@ -21,7 +21,7 @@ Pile::Pile(Pile &pile_const)
 {
     m_pile = (int *)malloc(sizeof(pile_const.m_pile));
     m_pile = pile_const.m_pile;
-    max_size = pile_const.max_size;
+    this->max_size = pile_const.max_size;
 }
 
 Pile::~Pile()
