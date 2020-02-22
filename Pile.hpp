@@ -4,9 +4,9 @@
 
 class Pile
 {
-    static int size;
     int *m_pile = nullptr;
     int max_size;
+    static int size;
     
     
     
