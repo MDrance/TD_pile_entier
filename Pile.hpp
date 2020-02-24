@@ -19,7 +19,6 @@ class Pile
         int depile();
         int pleine();
         int vide();
-        int get_max_size();
 };
 
 #endif

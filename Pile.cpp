@@ -2,8 +2,7 @@
 #include<iostream>
 #include<cstring>
 
-static int size;
-int max_size;
+int Pile::size = 0;
 
 Pile::Pile(int n)
 {
@@ -21,7 +20,7 @@ Pile::Pile(Pile &pile_const)
 {
     m_pile = (int *)malloc(sizeof(pile_const.m_pile));
     m_pile = pile_const.m_pile;
-    max_size = pile_const.get_max_size();
+    max_size = pile_const.max_size;
 }
 
 Pile::~Pile()
@@ -61,8 +60,4 @@ int Pile::vide()
     return 0;
 }
 
-int Pile::get_max_size()
-{
-    return this->max_size;
-}
 
